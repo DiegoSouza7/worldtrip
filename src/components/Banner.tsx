@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/image";
-import { Box, Flex, Text } from "@chakra-ui/layout";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 
 export function Banner() {

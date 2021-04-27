@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/image";
-import { Flex } from "@chakra-ui/layout";
+import { Flex } from "@chakra-ui/react";
 
 export function Header() {
   return (
