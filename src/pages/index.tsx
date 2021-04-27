@@ -1,6 +1,7 @@
 import { Flex, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 import { Banner } from '../components/Banner'
+import { ContinentsSlides } from '../components/ContinentsSlides'
 import { Header } from '../components/Header'
 import { TravelTypes } from '../components/TravelTypes'
 
@@ -46,6 +47,7 @@ export default function Home() {
           Então escolha seu continente
         </Text>
       </Flex>
+      <ContinentsSlides />
     </>
   )
 }
