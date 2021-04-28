@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 
 
 export function TravelTypes() {
@@ -14,19 +14,31 @@ export function TravelTypes() {
       marginTop="20"
     >
       <Flex
-        flexDirection="column"
+        flexDirection={{sm: "row", lg: "column"}}
         alignItems="center"
         justifyContent="space-between"
         w={165}
         h={145}
       >
-        <img src="/Cocktail.svg" alt="Vida"/>
+        <Image
+          src="/Cocktail.svg"
+          alt="Vida"
+          display={{sm: "none", lg: "block"}}
+        />
+        <Box
+          w="8px"
+          h="8px"
+          borderRadius="50%"
+          bg="#FFBA08"
+          display={{sm: "block", lg: "none"}}
+        />
         <Text
           fontWeight={600}
           fontSize="2xl"
           textAlign="center"
           lineHeight="34px"
           color="gray.500"
+          weight={{sm: "160px"}}
         >
           vida noturna
         </Text>

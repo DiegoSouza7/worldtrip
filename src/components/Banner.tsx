@@ -20,6 +20,7 @@ export function Banner() {
         justifyContent="space-between"
         alignItems="center"
         m="0 auto"
+        padding={{md: "20px", sm: "20px"}}
       >
         <Flex
           flexDirection="column"
@@ -48,6 +49,7 @@ export function Banner() {
           h={335}
           justifyContent="center"
           w="100%"
+          display={{sm: "none", xl: "block"}}
         >
           <Image
             position="absolute"

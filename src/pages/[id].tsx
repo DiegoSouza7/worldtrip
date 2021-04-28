@@ -1,4 +1,4 @@
-import { Flex, Text, Box } from '@chakra-ui/react'
+import { Flex, Text, Box, Tooltip } from '@chakra-ui/react'
 import Head from 'next/head'
 import { BannerContinent } from '../components/BannerContinent'
 import { CityCard } from '../components/CityCard'
@@ -98,14 +98,24 @@ export default function Continents() {
             >
               27
             </Text>
-            <Text
-              fontWeight={600}
-              fontSize="2xl"
-              color="gray.500"
-              lineHeight="36px"
-            >
-              cidades +100
-            </Text>
+            <Flex>
+              <Text
+                fontWeight={600}
+                fontSize="2xl"
+                color="gray.500"
+                lineHeight="36px"
+                whiteSpace="nowrap"
+              >
+                cidades +100
+              </Text>
+              <Tooltip
+                hasArrow label="Procurar cidades"
+                bg="gray.300"
+                color="black"
+              >
+                <img src="/Info.svg" alt="Info" style={{marginLeft: "5px"}} />
+              </Tooltip>
+            </Flex>
           </Flex>
         </Flex>
       </Flex>
