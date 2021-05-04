@@ -11,6 +11,7 @@ export function ContinentsSlides() {
       position="relative"
       mt={20}
       mb={10}
+      backgroundImage="url('/ContinentImage.png')"
     >
       <Image
         src="/ContinentImage.png"

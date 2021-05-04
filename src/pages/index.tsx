@@ -27,21 +27,21 @@ export default function Home() {
         flexDirection="column"
         justifyContent="space-between"
         alignItems="center"
-        w={840}
+        w={{sm: "100%", lg: 840}}
         h={101}
         m="0 auto"
         mt={20}
       >
         <Text
           fontWeight={500}
-          fontSize="4xl"
+          fontSize={["2xl","4xl"]}
           lineHeight="54px"
         >
           Vamos nessa?
         </Text>
         <Text
           fontWeight={500}
-          fontSize="4xl"
+          fontSize={["2xl","4xl"]}
           lineHeight="54px"
         >
           Então escolha seu continente
