@@ -1,80 +1,65 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
 
-export function ContinentsSlides() {
+interface ContinentSlideProps {
+  continent: {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+  }
+}
+export function ContinentSlide({ continent }: ContinentSlideProps) {
 
   return (
     <Flex
       w="100%"
       maxWidth={1240}
-      h={450}
+      h={{sm: "250px", md: '300px', lg: '375px', xl: '450px'}}
       m="0 auto"
       position="relative"
+      justifyContent="space-between"
+      alignItems="center"
       mt={20}
       mb={10}
-      backgroundImage="url('/ContinentImage.png')"
+      backgroundImage={`url('${continent.image}')`}
+      backgroundSize="cover"
+      backgroundPosition="center"
+      backgroundRepeat="no-repeat"
     >
-      <Image
-        src="/ContinentImage.png"
-        alt="Europa"
-        position="absolute"
-        w="100%"
-        h="100%"
-      />
       <Image
         src="/Previous.svg"
         alt="Anterior"
-        zIndex="5"
         w="60px"
         h="60px"
-        position="absolute"
-        top="195px"
-        left="15px"
         cursor="pointer"
       />
       <Flex
-        position="absolute"
         w={324}
         h={116}
-        top="167px"
-        left="36.9%"
         flexDirection="column"
         justifyContent="space-between"
         alignItems="center"
       >
         <Text
           fontWeight={700}
-          fontSize="5xl"
+          fontSize={["3xl", "4xl", "5xl"]}
           lineHeight="72px"
           color="#F5F8FA"
         >
-          Europa
+          {continent.title}
         </Text>
         <Text
           fontWeight={700}
-          fontSize="2xl"
+          fontSize={["xl", "2xl"]}
           lineHeight="72px"
           color="#DADADA"
         >
-          O continente mais antigo
+          {continent.description}
         </Text>
-      </Flex>
-      <Image
-        src="/Next.svg"
-        alt="Anterior"
-        zIndex="5"
-        w="60px"
-        h="60px"
-        position="absolute"
-        top="195px"
-        right="15px"
-        cursor="pointer"
-      />
-      <Flex
-        position="absolute"
+        <Flex
         w={128}
         h="16px"
-        top="90%"
-        left="44.8%"
+        mt={{sm: "10px", md: '30px', lg: '50px', xl: '100px'}}
         justifyContent="space-between"
         alignItems="center"
       >
@@ -109,6 +94,14 @@ export function ContinentsSlides() {
           borderRadius="50%"
         />
       </Flex>
+      </Flex>
+      <Image
+        src="/Next.svg"
+        alt="Próximo"
+        w="60px"
+        h="60px"
+        cursor="pointer"
+      />
     </Flex>
   )
 }
