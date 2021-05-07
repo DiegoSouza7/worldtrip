@@ -1,11 +1,32 @@
 import { Flex, Text, Box, Tooltip } from '@chakra-ui/react'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 import { BannerContinent } from '../components/BannerContinent'
 import { CityCard } from '../components/CityCard'
 import { Header } from '../components/Header'
+import { api } from '../services/api'
 
+interface ContinentProps {
+  continent: {
+    id: number;
+    name: string;
+    shortDescription: string;
+    imageBanner: string;
+    description: string;
+    citiesPlus: string;
+    numberCountry: number;
+    numberLanguages: number;
+    numberCities: number;
+    cities: {
+      name: string;
+      country: string;
+      flagImage: string;
+      imageCity: string
+    }[]
+  }
+}
 
-export default function Continents() {
+export default function Continent({continent}: ContinentProps) {
 
 
   return (
@@ -130,7 +151,7 @@ export default function Continents() {
         maxWidth={1160}
         h={220}
         m="0 auto"
-        mt={20}
+        mt={{sm: "24px", md: 20}}
         pl={{sm: "16px", "2xl": 0}}
         pr={{sm: "16px", "2xl": 0}}
       >
@@ -157,4 +178,26 @@ export default function Continents() {
       </Box>
     </>
   )
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: 'blocking'
+  }
+}
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const {id} = ctx.params
+
+  const { data } = await api.get(`continents/${id}`)
+
+  const continent = data
+
+  return {
+    props: {
+      continent
+    },
+    revalidate: 60 * 60 * 24
+  }
 }

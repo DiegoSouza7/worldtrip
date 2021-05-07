@@ -1,41 +1,208 @@
-[
-  {
-    "id": 1,
-    "name": "Europa",
-    "imageSlide": "/ContinentImage.png",
-    "imageBanner": "/Background.png",
-    "shortDescription": "O continente mais antigo",
-    "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-    "cities": [
-      {
-        "name": "Londres",
-        "country": "Reino Unido",
-        "flagImage": ""
-      },
-      {
-        "name": "Paris",
-        "country": "França",
-        "flagImage": ""
-      },
-      {
-        "name": "Roma",
-        "country": "Itália",
-        "flagImage": ""
-      },
-      {
-        "name": "Praga",
-        "country": "República Tcheca",
-        "flagImage": ""
-      },
-      {
-        "name": "Amsterdã",
-        "country": "Holanda",
-        "flagImage": ""
-      }
-    ],
-    "citiesPlus": 100,
-    "numberCountry": 50,
-    "numberLanguages": 6,
-    "numberCities": 24
-  }
-]
+{
+  "continents": [
+    {
+      "id": 1,
+      "name": "Europa",
+      "imageSlide": "/ContinentImage.png",
+      "imageBanner": "https://source.unsplash.com/EXdXLrZXS9Q",
+      "shortDescription": "O continente mais antigo",
+      "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "citiesPlus": 100,
+      "numberCountry": 50,
+      "numberLanguages": 6,
+      "numberCities": 24,
+      "cities": [
+        {
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/Ab9vQBR6f8E"
+        },
+        {
+          "name": "Paris",
+          "country": "França",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/NT1mJPgni6A"
+        },
+        {
+          "name": "Roma",
+          "country": "Itália",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/hs9hfDfeC3Q"
+        },
+        {
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/X8Vo9rGVPS8"
+        },
+        {
+          "name": "Barcelona",
+          "country": "Espanha",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/oJsRqwMHWH"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "América do Norte",
+      "imageSlide": "https://images.unsplash.com/photo-1551071165-25c81ce2683b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80",
+      "imageBanner": "https://images.unsplash.com/photo-1551071165-25c81ce2683b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80",
+      "shortDescription": "O continente mais antigo",
+      "description": "A América do Norte está localizada no extremo norte das Américas e é composta por apenas três países: Estados Unidos, Canadá e México, além de territórios de domínios europeus, como a Groelândia (pertencente ao Reino da Dinamarca, com representação no parlamento) e Bermudas (dependência britânica).",
+      "citiesPlus": 100,
+      "numberCountry": 3,
+      "numberLanguages": 2,
+      "numberCities": 35,
+      "cities": [
+        {
+          "name": "Nova york",
+          "country": "Estados Unidos",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/iEgP_YHs-jM"
+        },
+        {
+          "name": "Miami",
+          "country": "Estados Unidos",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/Ev0Vj_0PPck"
+        },
+        {
+          "name": "Las Vegas",
+          "country": "Estados Unidos",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/fuDu3_o_TaY"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "América do Sul",
+      "imageSlide": "https://source.unsplash.com/hbs08ml2T2c",
+      "imageBanner": "https://source.unsplash.com/hbs08ml2T2c",
+      "shortDescription": "Lar da maior floresta do mundo",
+      "description": "A América do Sul está localizada em grande parte no hemisfério sul, na zona intertropical ocidental. A América do Sul abrange um território de 18 milhões de quilômetros quadrados e é banhada a leste pelo oceano Atlântico, a oeste pelo oceano Pacífico e ao norte pelo mar das Antilhas, conhecido como do Caribe.",
+      "citiesPlus": 100,
+      "numberCountry": 20,
+      "numberLanguages": 7,
+      "numberCities": 40,
+      "cities": [
+        {
+          "name": "Rio de Janeiro",
+          "country": "Brasil",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/tYGZvg-Ozh4"
+        },
+        {
+          "name": "Buenos aires",
+          "country": "Argentina",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/_yo28TDZFNo"
+        },
+        {
+          "name": "Lima",
+          "country": "Peru",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/6Q4wktTem_I"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ásia",
+      "imageSlide": "https://source.unsplash.com/WHhbYArwFt8",
+      "imageBanner": "https://source.unsplash.com/WHhbYArwFt8",
+      "shortDescription": "O maior continente",
+      "description": "A Ásia é o maior continente, tanto em área (chega a quase um terço de todas as terras emersas do nosso planeta) como em população, onde habitam aproximadamente 4,5 bilhões de habitantes.",
+      "citiesPlus": 100,
+      "numberCountry": 50,
+      "numberLanguages": 2300,
+      "numberCities": 24,
+      "cities": [
+        {
+          "name": "Hong Kong",
+          "country": "China",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/JVCozvGeKNs"
+        },
+        {
+          "name": "Kuala Lumpur",
+          "country": "Malásia",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/NecP3sIvRX8"
+        },
+        {
+          "name": "Delhi",
+          "country": "Índia",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/LLK0mYl-lu0"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Oceania",
+      "imageSlide": "https://source.unsplash.com/Hao52Fu9-F8",
+      "imageBanner": "https://source.unsplash.com/Hao52Fu9-F8",
+      "shortDescription": "O continente mais isolado",
+      "description": "A Oceania é o continente mais isolado do mundo, sua barreira geográfica fez com que fosse o último a ser descoberto pelos europeus. Em razão desse atraso em seu descobrimento ficou conhecido como 'mundo novo'.",
+      "citiesPlus": 100,
+      "numberCountry": 50,
+      "numberLanguages": 6,
+      "numberCities": 6,
+      "cities": [
+        {
+          "name": "Sydney",
+          "country": "Austrália",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/F2LC2eh4TCg"
+        },
+        {
+          "name": "Auckland",
+          "country": "Nova Zelândia",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/hIKVSVKH7No"
+        },
+        {
+          "name": "Melbourne",
+          "country": "Austrália",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/-gmtAa0Q5MI"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "África",
+      "imageSlide": "https://source.unsplash.com/60XLoOgwkfA",
+      "imageBanner": "https://source.unsplash.com/60XLoOgwkfA",
+      "shortDescription": "Lar da famosa savana",
+      "description": "África é um dos seis continentes do mundo, sendo o terceiro maior em extensão territorial. É conhecida pela sua pluralidade étnica e cultural, e, por meio de uma história milenar, é capaz de contar a história de toda a humanidade.",
+      "citiesPlus": 100,
+      "numberCountry": 51,
+      "numberLanguages": 541,
+      "numberCities": 24,
+      "cities": [
+        {
+          "name": "Cairo",
+          "country": "Egito",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/TAtKoLZUc3I"
+        },
+        {
+          "name": "Joanesburgo",
+          "country": "África do Sul",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/ybjhQsdXxzY"
+        },
+        {
+          "name": "Marrakech",
+          "country": "Marrocos",
+          "flagImage": "/Bandeira.svg",
+          "imageCity": "https://source.unsplash.com/pr_PlYC8xhM"
+        }
+      ]
+    }
+  ]
+}
