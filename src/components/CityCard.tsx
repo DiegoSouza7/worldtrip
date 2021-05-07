@@ -8,6 +8,9 @@ export function CityCard() {
       h={280}
       textAlign="center"
       gridTemplateRows="173px 1fr"
+      pl="10px"
+      pr="10px"
+      pb="10px"
     >
       <img
         src="/Londres.png"
@@ -16,6 +19,8 @@ export function CityCard() {
       />
       <Grid
         gridTemplateColumns="1fr 50px"
+        border="1px solid rgba(255, 186, 8, 0.5)"
+        borderBottomRadius="5px"
       >
         <Grid
           gridTemplateRows="1fr 1fr"

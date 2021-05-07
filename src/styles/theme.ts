@@ -5,7 +5,8 @@ const breakpoints = createBreakpoints({
   sm: "320px",
   md: "768px",
   lg: "960px",
-  xl: "1200px",
+  xl: "1160px",
+  "2xl": "1200px",
 })
 
 export const theme = extendTheme({
@@ -22,7 +23,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: 'white',
+        bg: '#F5F8FA',
         color: 'gray.500'    
       }
     }

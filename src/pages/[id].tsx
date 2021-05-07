@@ -20,24 +20,30 @@ export default function Continents() {
       <Flex
         w="100%"
         maxWidth={1160}
-        h={220}
+        pl={{sm: "16px", "2xl": 0}}
+        pr={{sm: "16px", "2xl": 0}}
         m="0 auto"
-        mt={20}
+        mt={{sm: "24px", md: 20}}
+        flexDirection={{sm: "column", md: "row"}}
         justifyContent="space-between"
         alignItems="center"
       >
         <Text
           fontWeight={400}
-          fontSize="2xl"
-          lineHeight="36px"
-          maxWidth={600}
+          fontSize={{ sm: "sm", md: "lg", lg: "2xl"}}
+          lineHeight={{sm: 5, md: 7, lg: 9}}
+          maxWidth={{md: 500,lg: 600}}
           color="gray.500"
+          textAlign="justify"
+          mr="10px"
         >
           A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
         </Text>
         <Flex
-          w={490}
+          w="100%"
           h={100}
+          minWidth="350px"
+          maxWidth="360"
           justifyContent="space-between"
           alignItems="center"
         >
@@ -49,14 +55,14 @@ export default function Continents() {
             <Text
               color="#FFBA08"
               fontWeight={600}
-              fontSize="5xl"
-              lineHeight="72px"
+              fontSize={{ sm: "2xl", md: "3xl", lg: "5xl"}}
+              lineHeight={{ sm: 9, md: "48px", lg: "72px"}}
             >
               50
             </Text>
             <Text
               fontWeight={600}
-              fontSize="2xl"
+              fontSize={{sm: "lg",  md: "xl", lg: "2xl"}}
               color="gray.500"
               lineHeight="36px"
             >
@@ -71,14 +77,14 @@ export default function Continents() {
             <Text
               color="#FFBA08"
               fontWeight={600}
-              fontSize="5xl"
-              lineHeight="72px"
+              fontSize={{ sm: "2xl", md: "3xl", lg: "5xl"}}
+              lineHeight={{ sm: 9, md: "48px", lg: "72px"}}
             >
               60
             </Text>
             <Text
               fontWeight={600}
-              fontSize="2xl"
+              fontSize={{sm: "lg",  md: "xl", lg: "2xl"}}
               color="gray.500"
               lineHeight="36px"
             >
@@ -93,15 +99,15 @@ export default function Continents() {
             <Text
               color="#FFBA08"
               fontWeight={600}
-              fontSize="5xl"
-              lineHeight="72px"
+              fontSize={{ sm: "2xl", md: "3xl", lg: "5xl"}}
+              lineHeight={{ sm: 9, md: "48px", lg: "72px"}}
             >
               27
             </Text>
             <Flex>
               <Text
                 fontWeight={600}
-                fontSize="2xl"
+                fontSize={{sm: "lg",  md: "xl", lg: "2xl"}}
                 color="gray.500"
                 lineHeight="36px"
                 whiteSpace="nowrap"
@@ -125,16 +131,18 @@ export default function Continents() {
         h={220}
         m="0 auto"
         mt={20}
+        pl={{sm: "16px", "2xl": 0}}
+        pr={{sm: "16px", "2xl": 0}}
       >
         <Text
           fontWeight={500}
-          fontSize="4xl"
-          lineHeight="54px"
+          fontSize={{sm: "2xl", xl: "4xl"}}
+          lineHeight={{sm: 6, xl: "54px"}}
         >
           cidades +100
         </Text>
         <Flex
-          justifyContent="space-between"
+          justifyContent={{sm: "Center", md: "space-evenly"}}
           alignItems="center"
           flexWrap="wrap"
           w="100%"

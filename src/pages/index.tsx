@@ -34,15 +34,16 @@ export default function Home() {
       >
         <Text
           fontWeight={500}
-          fontSize={["2xl","4xl"]}
+          fontSize={{sm: "2xl", xl: "4xl"}}
           lineHeight="54px"
         >
           Vamos nessa?
         </Text>
         <Text
           fontWeight={500}
-          fontSize={["2xl","4xl"]}
+          fontSize={{sm: "2xl", xl: "4xl"}}
           lineHeight="54px"
+          textAlign="center"
         >
           Então escolha seu continente
         </Text>

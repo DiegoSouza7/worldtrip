@@ -4,21 +4,20 @@ import { Card } from "./card";
 export function TravelTypes() {
   return (
     <Flex
-      justifyContent="space-between"
-      textAlign="right"
-      w={{sm: "360px", lg: "100%"}}
+      justifyContent={{sm: "Center", md: "space-evenly"}}
+      w="100%"
       alignItems="center"
       flexWrap="wrap"
-      maxWidth={1160}
+      maxWidth={{sm: "360px", md: "400px", lg: "1160px"}}
       h={145}
       m="0 auto"
       marginTop="20"
     >
-      <Card src="/Cocktail.svg" alt="Vida" text="vida noturna" />
-      <Card src="/Surf.svg" alt="Vida" text="praia" />
-      <Card src="/Building.svg" alt="Vida" text="moderno" />
-      <Card src="/Museum.svg" alt="Vida" text="clássico" />
-      <Card src="/Earth.svg" alt="Vida" text="e mais..." />
+      <Card src="/Cocktail.svg" alt="Vida" text="vida noturna" justifyItem="left" />
+      <Card src="/Surf.svg" alt="Vida" text="praia" justifyItem="flex-end" />
+      <Card src="/Building.svg" alt="Vida" text="moderno" justifyItem="left" />
+      <Card src="/Museum.svg" alt="Vida" text="clássico" justifyItem="flex-end" />
+      <Card src="/Earth.svg" alt="Vida" text="e mais..." justifyItem="center" />
     </Flex>
   )
 }

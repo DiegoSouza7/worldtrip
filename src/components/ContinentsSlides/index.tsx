@@ -3,14 +3,9 @@ import { ContinentSlide } from "./ContinentSlide";
 
 
 interface SlidesProps {
-  continents: {
-    slug: string;
-    title: string;
-    summary: string;
-    image: string;
-  }[]
+
 }
-export function ContinentsSlides({ continents }: SlidesProps) {
+export function ContinentsSlides({ }: SlidesProps) {
   const continent = {
     id: 123156,
     title: 'Europa',

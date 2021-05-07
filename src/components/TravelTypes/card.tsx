@@ -4,16 +4,19 @@ type CardProps = {
   src: string;
   text: string;
   alt: string;
+  justifyItem: string;
 }
 
-export function Card({ src, text, alt }: CardProps) {
+export function Card({ src, text, alt, justifyItem }: CardProps) {
+  
   return (
     <Flex
       flexDirection={{ sm: "row", lg: "column" }}
       alignItems="center"
-      justifyContent={{lg: "space-between"}}
-      w={{sm: '170px', lg: 165}}
+      justifyContent={{sm: `${justifyItem}`,lg: "space-between"}}
+      maxWidth={{sm: '170px', lg: 165}}
       h={{lg: 145}}
+      w="100%"
     >
       <Image
         src={src}
@@ -30,11 +33,10 @@ export function Card({ src, text, alt }: CardProps) {
       <Text
         ml={{sm: '10px', lg: '0'}}
         fontWeight={600}
-        fontSize={[ "xl", "2xl"]}
+        fontSize={{sm: "lg", md: "xl", lg: "2xl"}}
         textAlign="center"
-        lineHeight="34px"
+        lineHeight={{sm: "27px", md: "30px", lg: "34px"}}
         color="gray.500"
-        weight={{ sm: "160px" }}
       >
         {text}
     </Text>
