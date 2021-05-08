@@ -35,7 +35,7 @@ export function ContinentSlide({ continents }: ContinentSlideProps) {
   }
 
   function handleToPageContinent() {
-    history.push(`/${continent.name}`)
+    history.push(`/${continent.id}`)
   }
 
   return (

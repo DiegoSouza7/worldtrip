@@ -37,7 +37,7 @@ export default function Continent({continent}: ContinentProps) {
         </title>
       </Head>
       <Header />
-      <BannerContinent />
+      <BannerContinent image={continent.imageBanner} title={continent.name} />
       <Flex
         w="100%"
         maxWidth={1160}
@@ -53,18 +53,18 @@ export default function Continent({continent}: ContinentProps) {
           fontWeight={400}
           fontSize={{ sm: "sm", md: "lg", lg: "2xl"}}
           lineHeight={{sm: 5, md: 7, lg: 9}}
-          maxWidth={{md: 500,lg: 600}}
+          maxWidth={{md: 500, xl: 600}}
           color="gray.500"
           textAlign="justify"
           mr="10px"
         >
-          A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
+          {continent.description}
         </Text>
         <Flex
           w="100%"
           h={100}
           minWidth="350px"
-          maxWidth="360"
+          maxWidth="380px"
           justifyContent="space-between"
           alignItems="center"
         >
@@ -79,7 +79,7 @@ export default function Continent({continent}: ContinentProps) {
               fontSize={{ sm: "2xl", md: "3xl", lg: "5xl"}}
               lineHeight={{ sm: 9, md: "48px", lg: "72px"}}
             >
-              50
+              {continent.numberCountry}
             </Text>
             <Text
               fontWeight={600}
@@ -101,7 +101,7 @@ export default function Continent({continent}: ContinentProps) {
               fontSize={{ sm: "2xl", md: "3xl", lg: "5xl"}}
               lineHeight={{ sm: 9, md: "48px", lg: "72px"}}
             >
-              60
+              {continent.numberLanguages}
             </Text>
             <Text
               fontWeight={600}
@@ -123,7 +123,7 @@ export default function Continent({continent}: ContinentProps) {
               fontSize={{ sm: "2xl", md: "3xl", lg: "5xl"}}
               lineHeight={{ sm: 9, md: "48px", lg: "72px"}}
             >
-              27
+              {continent.numberCities}
             </Text>
             <Flex>
               <Text
@@ -133,7 +133,7 @@ export default function Continent({continent}: ContinentProps) {
                 lineHeight="36px"
                 whiteSpace="nowrap"
               >
-                cidades +100
+                cidades +{continent.citiesPlus}
               </Text>
               <Tooltip
                 hasArrow label="Procurar cidades"
@@ -149,7 +149,6 @@ export default function Continent({continent}: ContinentProps) {
       <Box
         w="100%"
         maxWidth={1160}
-        h={220}
         m="0 auto"
         mt={{sm: "24px", md: 20}}
         pl={{sm: "16px", "2xl": 0}}
@@ -160,7 +159,7 @@ export default function Continent({continent}: ContinentProps) {
           fontSize={{sm: "2xl", xl: "4xl"}}
           lineHeight={{sm: 6, xl: "54px"}}
         >
-          cidades +100
+          cidades +{continent.citiesPlus}
         </Text>
         <Flex
           justifyContent={{sm: "Center", md: "space-evenly"}}
@@ -168,12 +167,17 @@ export default function Continent({continent}: ContinentProps) {
           flexWrap="wrap"
           w="100%"
           mt={10}
+          mb="30px"
         >
-          <CityCard />
-          <CityCard />
-          <CityCard />
-          <CityCard />
-          <CityCard />
+          {continent.cities.map(city => (
+            <CityCard
+              key={city.name}
+              country={city.country}
+              name={city.name}
+              flagImage={city.flagImage}
+              imageCity={city.imageCity}
+            />
+          ))}
         </Flex>
       </Box>
     </>

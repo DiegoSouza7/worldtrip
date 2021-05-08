@@ -1,7 +1,13 @@
-import { Flex, Grid, Text } from "@chakra-ui/react";
+import { Flex, Grid, Image, Text } from "@chakra-ui/react";
 
+type CityCardProps = {
+  name: string;
+  country: string;
+  flagImage: string;
+  imageCity: string;
+}
 
-export function CityCard() {
+export function CityCard({country, name, flagImage, imageCity}: CityCardProps) {
   return (
     <Grid
       w="256"
@@ -12,9 +18,12 @@ export function CityCard() {
       pr="10px"
       pb="10px"
     >
-      <img
-        src="/Londres.png"
-        alt="Londres"
+      <Image
+        src={imageCity}
+        alt={name}
+        w="256px"
+        h="173px"
+        objectFit="cover"
         style={{borderTopLeftRadius: '4px', borderTopRightRadius: '4px'}}
       />
       <Grid
@@ -36,7 +45,7 @@ export function CityCard() {
             mt="18px"
             ml="24px"
           >
-            Londres
+            {name}
           </Text>
           <Text
             fontWeight={500}
@@ -46,14 +55,14 @@ export function CityCard() {
             ml="24px"
             color="gray.400"
           >
-            Reino Unido
+            {country}
           </Text>
         </Grid>
         <Flex
           justifyContent="center"
           alignItems="center"
         >
-          <img width="30px" height="30px" src="/Bandeira.svg" alt="" />
+          <img width="30px" height="30px" src={flagImage} alt="" />
         </Flex>
       </Grid>
     </Grid>
