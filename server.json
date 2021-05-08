@@ -15,31 +15,31 @@
         {
           "name": "Londres",
           "country": "Reino Unido",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "GB",
           "imageCity": "https://source.unsplash.com/Ab9vQBR6f8E"
         },
         {
           "name": "Paris",
           "country": "França",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "FR",
           "imageCity": "https://source.unsplash.com/NT1mJPgni6A"
         },
         {
           "name": "Roma",
           "country": "Itália",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "IT",
           "imageCity": "https://source.unsplash.com/hs9hfDfeC3Q"
         },
         {
           "name": "Praga",
           "country": "República Tcheca",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "CZ",
           "imageCity": "https://source.unsplash.com/X8Vo9rGVPS8"
         },
         {
           "name": "Barcelona",
           "country": "Espanha",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "ES",
           "imageCity": "https://source.unsplash.com/oJsRqwMHWH"
         }
       ]
@@ -59,19 +59,19 @@
         {
           "name": "Nova york",
           "country": "Estados Unidos",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "US",
           "imageCity": "https://source.unsplash.com/iEgP_YHs-jM"
         },
         {
           "name": "Miami",
           "country": "Estados Unidos",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "US",
           "imageCity": "https://source.unsplash.com/Ev0Vj_0PPck"
         },
         {
           "name": "Las Vegas",
           "country": "Estados Unidos",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "US",
           "imageCity": "https://source.unsplash.com/fuDu3_o_TaY"
         }
       ]
@@ -91,19 +91,19 @@
         {
           "name": "Rio de Janeiro",
           "country": "Brasil",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "BR",
           "imageCity": "https://source.unsplash.com/tYGZvg-Ozh4"
         },
         {
           "name": "Buenos aires",
           "country": "Argentina",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "AR",
           "imageCity": "https://source.unsplash.com/_yo28TDZFNo"
         },
         {
           "name": "Lima",
           "country": "Peru",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "PE",
           "imageCity": "https://source.unsplash.com/6Q4wktTem_I"
         }
       ]
@@ -123,19 +123,19 @@
         {
           "name": "Hong Kong",
           "country": "China",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "CN",
           "imageCity": "https://source.unsplash.com/JVCozvGeKNs"
         },
         {
           "name": "Kuala Lumpur",
           "country": "Malásia",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "MY",
           "imageCity": "https://source.unsplash.com/NecP3sIvRX8"
         },
         {
           "name": "Delhi",
           "country": "Índia",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "IN",
           "imageCity": "https://source.unsplash.com/LLK0mYl-lu0"
         }
       ]
@@ -155,19 +155,19 @@
         {
           "name": "Sydney",
           "country": "Austrália",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "AU",
           "imageCity": "https://source.unsplash.com/F2LC2eh4TCg"
         },
         {
           "name": "Auckland",
           "country": "Nova Zelândia",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "NZ",
           "imageCity": "https://source.unsplash.com/hIKVSVKH7No"
         },
         {
           "name": "Melbourne",
           "country": "Austrália",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "AU",
           "imageCity": "https://source.unsplash.com/-gmtAa0Q5MI"
         }
       ]
@@ -187,19 +187,19 @@
         {
           "name": "Cairo",
           "country": "Egito",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "EG",
           "imageCity": "https://source.unsplash.com/TAtKoLZUc3I"
         },
         {
           "name": "Joanesburgo",
           "country": "África do Sul",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "ZA",
           "imageCity": "https://source.unsplash.com/ybjhQsdXxzY"
         },
         {
           "name": "Marrakech",
           "country": "Marrocos",
-          "flagImage": "/Bandeira.svg",
+          "flagImage": "MA",
           "imageCity": "https://source.unsplash.com/pr_PlYC8xhM"
         }
       ]
