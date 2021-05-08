@@ -63,18 +63,19 @@ export function ContinentSlide({ continents }: ContinentSlideProps) {
         onClick={handlePreviusContinent}
       />
       <Flex
-        w={324}
-        h={116}
+        w={{ sm: 324, xl: "100%" }}
+        h="100%"
         flexDirection="column"
         justifyContent="space-between"
         alignItems="center"
         onClick={handleToPageContinent}
         cursor="pointer"
+        position="relative"
       >
         <Text
           fontWeight={700}
           fontSize={{ sm: "3xl", md: "4xl", xl: "5xl" }}
-          lineHeight="72px"
+          lineHeight={{sm: "54px", xl: "72px"}}
           color="#F5F8FA"
         >
           {continent.name}
@@ -82,15 +83,17 @@ export function ContinentSlide({ continents }: ContinentSlideProps) {
         <Text
           fontWeight={700}
           fontSize={{ sm: "xl", xl: "2xl" }}
-          lineHeight="72px"
+          lineHeight={{sm: 5, xl: "72px"}}
           color="#DADADA"
+          textAlign="center"
         >
           {continent.shortDescription}
         </Text>
         <Flex
-          w={["60px", "80px", "100px", "128px"]}
+          w={{ sm: "80px", md: "90px", lg: "100px", xl: "128px"}}
           h="16px"
-          mt={{ sm: "10px", md: '30px', lg: '50px', xl: '90px', "2xl": "30px" }}
+          position="absolute"
+          mt={{ sm: "140px", md: '160px', lg: '190px', xl: '250px', "2xl": "250px" }}
           justifyContent="space-between"
           alignItems="center"
         >
